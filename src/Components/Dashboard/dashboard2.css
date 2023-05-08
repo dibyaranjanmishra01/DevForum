@@ -1,0 +1,95 @@
+.dashboardContainer {
+    background-color: aqua;
+    height : 100vh;
+    width :100vw;
+    display: grid;
+    grid-template-columns: 30vw 70vw; /* Two equal-width columns */
+    grid-template-rows: 1fr 2fr; /* Three equal-height rows */
+    transition: all 0.15s ease;
+    font-size: 1vw;
+}
+
+.dashboardTitle {
+    padding:10% 10%;
+    color: #404040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboardLinks {
+    
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.dashboardRecents {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10%
+}
+
+@media (max-width:600px)
+{
+    .dashboardLinks {
+        font-size: 3em;
+        grid-column: span 1;
+        grid-row: span 1;
+        min-height:100px;
+        border: 2px solid red;
+        padding: 20px;
+        align-items: start;
+    }
+
+    .dashboardTitle {
+        font-size: 7em;
+        grid-column: 1;
+        grid-row: 1;
+        min-height:100px;
+        border: 2px solid red;
+        padding: 20px;
+    }
+
+    .dashboardRecents {
+        grid-column: 1/span 2;
+        grid-row: 2;
+        min-height:100px;
+        border: 2px solid red;
+        padding: 20px;
+    }  
+}
+
+@media (min-width:600px)
+{
+    .dashboardTitle {
+        font-size: 4em;
+        grid-column: span 1;
+        grid-row: span 1;
+        min-height:100px;
+        border: 2px solid red;
+        padding: 20px;
+    }
+    
+    .dashboardLinks {
+        font-size: 2em;
+        grid-column: span 1;
+        grid-row: span 1;
+        min-height:100px;
+        border: 2px solid red;
+        padding: 20px;
+    }
+
+    .dashboardRecents {
+        grid-column: span 1;
+        grid-row: span 2;
+        min-height:100px;
+        border: 2px solid red;
+        padding: 20px;
+    }    
+}
+
+
