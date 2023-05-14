@@ -1,0 +1,14 @@
+.gridContainer {
+    border: 2px solid blue;
+    display: grid;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4 ,1fr ); /* Two equal-width columns */
+}
+
+.gridContainer::-webkit-scrollbar{
+    display: none;
+}
+
+

@@ -1,0 +1,25 @@
+#cardItem {
+    scroll-snap-align: start;
+    margin:20px;
+    white-space: nowarp;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    width:10vw;
+    height:10vw;
+    
+}
+
+@media (max-width: 800px)
+{
+    #cardItem{
+        width:20vw;
+        height:20vw;
+    }
+}
+
+#cardItem:hover {
+    transition: all 0.3s ease-in-out;
+    scale:1.2;
+}
